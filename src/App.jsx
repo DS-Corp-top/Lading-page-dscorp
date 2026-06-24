@@ -298,6 +298,30 @@ function App() {
             >
               Portfólio Power BI
             </a>
+            <a
+              className="site-nav__external"
+              href="https://portal.dscorp.top/accounts/login/?next=/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Portal Power BI
+            </a>
+            <a
+              className="site-nav__external"
+              href="https://eco.dscorp.top/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DS corp economia
+            </a>
+            <a
+              className="site-nav__external"
+              href="https://nexo.dscorp.top/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nexo Gestão Financeira
+            </a>
           </nav>
         </div>
       </header>
