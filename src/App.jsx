@@ -12,7 +12,7 @@ import fundamentalsImageThree from './assets/canva/fundamentos-3.jpg'
 const brandLogo = '/DS-Corp.svg'
 
 const externalLinks = [
-  { label: 'Portfólio Power BI', href: 'https://www.portfolio.dscorp.top/' },
+  { label: 'Portfólio Power BI', href: 'https://portfolio.dscorp.top/' },
   { label: 'Portal Power BI', href: 'https://portal.dscorp.top/accounts/login/?next=/' },
   { label: 'DS Corp Economia', href: 'https://eco.dscorp.top/' },
   { label: 'Nexo Gestão Financeira', href: 'https://www.appnexo.top/' },
