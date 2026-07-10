@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import heroPortraitBg from './assets/canva/hero-portrait-bg.png'
 import heroTeamLeft from './assets/canva/hero-team-left.png'
@@ -11,9 +11,16 @@ import fundamentalsImageThree from './assets/canva/fundamentos-3.jpg'
 
 const brandLogo = '/DS-Corp.svg'
 
+const externalLinks = [
+  { label: 'Portfólio Power BI', href: 'https://www.portfolio.dscorp.top/' },
+  { label: 'Portal Power BI', href: 'https://portal.dscorp.top/accounts/login/?next=/' },
+  { label: 'DS Corp Economia', href: 'https://eco.dscorp.top/' },
+  { label: 'Nexo Gestão Financeira', href: 'https://www.appnexo.top/' },
+]
+
 const heroTags = [
   'Engenharia de Software',
-  'Business Intelligence',
+  'Software House',
   'Automação de Processos',
   'Integração de Sistemas',
 ]
@@ -26,7 +33,7 @@ const whoWeAreParagraphs = [
 const whoHighlights = [
   'Engenharia para sistemas, APIs e integração de sistemas',
   'Automação de processos para ganho de escala',
-  'Business Intelligence para leitura estratégica',
+  'Software house para criar e evoluir produtos digitais',
   'Estrutura para decisões rápidas e seguras',
 ]
 
@@ -39,10 +46,10 @@ const softwareEngineeringBulletPoints = [
   'APIs, automações e fluxos para reduzir retrabalho',
 ]
 
-const dataAndBiBulletPoints = [
-  'Dashboards gerenciais e operacionais',
-  'Modelagem de dados para leitura confiável',
-  'Indicadores para performance, margem e eficiência',
+const softwareHouseBulletPoints = [
+  'Squads dedicados para criar produtos digitais do zero',
+  'Evolução contínua de sistemas e plataformas existentes',
+  'Arquitetura escalável para crescer junto com o negócio',
 ]
 
 const processAutomationBulletPoints = [
@@ -94,12 +101,12 @@ const comparisonCards = [
       'Quando bem aplicada, reduz ruído operacional, melhora a experiência interna e conecta tecnologia diretamente ao resultado.',
   },
   {
-    title: 'Dados e Business Intelligence',
+    title: 'Software House',
     intro:
-      'Business Intelligence transforma dados dispersos em leitura acionável. O foco é dar clareza para operação, gestão e liderança por meio de indicadores confiáveis e contexto analítico.',
-    items: dataAndBiBulletPoints,
+      'Como software house, a DS Corp projeta, desenvolve e evolui produtos digitais sob medida, unindo tecnologia e contexto de negócio para entregar sistemas que sustentam a operação.',
+    items: softwareHouseBulletPoints,
     closing:
-      'Mais do que visualizar números, BI bem estruturado ajuda a orientar prioridades, corrigir desvios e acelerar a tomada de decisão.',
+      'Mais do que entregar código, construímos base técnica sólida para o produto crescer com segurança e velocidade.',
   },
   {
     title: 'Automação de Processos',
@@ -230,7 +237,61 @@ function WhatsAppIcon() {
   )
 }
 
+function ChevronIcon() {
+  return (
+    <svg
+      className="nav-dropdown__chevron"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M3.5 6L8 10.5L12.5 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isPlatformsOpen, setIsPlatformsOpen] = useState(false)
+  const platformsRef = useRef(null)
+
+  useEffect(() => {
+    document.body.classList.toggle('nav-open', isMenuOpen)
+  }, [isMenuOpen])
+
+  useEffect(() => {
+    if (!isMenuOpen) {
+      setIsPlatformsOpen(false)
+    }
+  }, [isMenuOpen])
+
+  useEffect(() => {
+    if (!isPlatformsOpen) {
+      return undefined
+    }
+
+    const handlePointerDown = (event) => {
+      if (platformsRef.current && !platformsRef.current.contains(event.target)) {
+        setIsPlatformsOpen(false)
+      }
+    }
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setIsPlatformsOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handlePointerDown)
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isPlatformsOpen])
+
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const revealSelector = [
@@ -285,43 +346,75 @@ function App() {
     <main className="page-shell">
       <header className="site-header">
         <div className="content-shell site-header__inner">
-          <nav className="site-nav" aria-label="Navegação principal">
-            <a href="#quem-somos">Quem somos</a>
-            <a href="#fundamentos">Soluções</a>
-            <a href="#abordagem">Abordagem</a>
-            <a href="#contato">Contato</a>
-            <a
-              className="site-nav__external"
-              href="https://www.portfolio.dscorp.top/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Portfólio Power BI
-            </a>
-            <a
-              className="site-nav__external"
-              href="https://portal.dscorp.top/accounts/login/?next=/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Portal Power BI
-            </a>
-            <a
-              className="site-nav__external"
-              href="https://eco.dscorp.top/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              DS corp economia
-            </a>
-            <a
-              className="site-nav__external"
-              href="https://nexo.dscorp.top/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Nexo Gestão Financeira
-            </a>
+          <a className="site-header__brand" href="#top" aria-label="DS Corp">
+            <img src={brandLogo} alt="" />
+          </a>
+
+          <button
+            type="button"
+            className={`site-nav-toggle${isMenuOpen ? ' is-open' : ''}`}
+            aria-expanded={isMenuOpen}
+            aria-controls="site-nav"
+            aria-label={isMenuOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação'}
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav
+            id="site-nav"
+            className={`site-nav${isMenuOpen ? ' is-open' : ''}`}
+            aria-label="Navegação principal"
+          >
+            <div className="site-nav__links">
+              <a href="#quem-somos" onClick={() => setIsMenuOpen(false)}>
+                Quem somos
+              </a>
+              <a href="#fundamentos" onClick={() => setIsMenuOpen(false)}>
+                Soluções
+              </a>
+              <a href="#abordagem" onClick={() => setIsMenuOpen(false)}>
+                Abordagem
+              </a>
+              <a href="#contato" onClick={() => setIsMenuOpen(false)}>
+                Contato
+              </a>
+            </div>
+
+            <div className="nav-dropdown" ref={platformsRef}>
+              <button
+                type="button"
+                className={`nav-dropdown__toggle${isPlatformsOpen ? ' is-open' : ''}`}
+                aria-expanded={isPlatformsOpen}
+                aria-controls="nav-platforms-menu"
+                onClick={() => setIsPlatformsOpen((open) => !open)}
+              >
+                Plataformas
+                <ChevronIcon />
+              </button>
+
+              <div
+                id="nav-platforms-menu"
+                className={`nav-dropdown__menu${isPlatformsOpen ? ' is-open' : ''}`}
+              >
+                {externalLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      setIsPlatformsOpen(false)
+                      setIsMenuOpen(false)
+                    }}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
           </nav>
         </div>
       </header>
@@ -337,7 +430,7 @@ function App() {
 
                 <span className="brand-link__copy">
                   <strong>DS Corp</strong>
-                  <span>Business Intelligence</span>
+                  <span>Software House</span>
                 </span>
               </a>
 
@@ -379,7 +472,6 @@ function App() {
               <img className="hero-person hero-person--left" src={heroTeamLeft} alt="" />
               <img className="hero-person hero-person--center" src={heroTeamCenter} alt="" />
               <img className="hero-person hero-person--right" src={heroTeamRight} alt="" />
-              <div className="hero-conceal hero-conceal--bouquet"></div>
             </div>
           </div>
         </div>
@@ -510,7 +602,7 @@ function App() {
           <article className="panel consulting-card">
             <p className="eyebrow">Consultoria integrada</p>
             <h3>
-              Por que unir Business Intelligence, engenharia de software, integração de
+              Por que unir Software House, engenharia de software, integração de
               sistemas e automação de processos?
             </h3>
 
