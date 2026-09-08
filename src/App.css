@@ -732,12 +732,35 @@
   border-radius: 22px;
   background: var(--surface-strong);
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
 }
 
-.fundamentals-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.fundamentals-icon {
+  width: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.fundamentals-illustration {
+  width: 56px;
+  height: 56px;
+}
+
+.fundamentals-card figcaption {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .section--fundamentals {

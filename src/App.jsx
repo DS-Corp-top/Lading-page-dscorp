@@ -5,9 +5,6 @@ import heroTeamLeft from './assets/canva/hero-team-left.png'
 import heroTeamCenter from './assets/canva/hero-team-center.png'
 import heroTeamRight from './assets/canva/hero-team-right.png'
 import whoBackground from './assets/canva/quem-somos-bg.png'
-import fundamentalsImageOne from './assets/canva/fundamentos-1.jpg'
-import fundamentalsImageTwo from './assets/canva/fundamentos-2.jpg'
-import fundamentalsImageThree from './assets/canva/fundamentos-3.jpg'
 
 const brandLogo = '/DS-Corp.svg'
 
@@ -19,8 +16,8 @@ const externalLinks = [
 ]
 
 const heroTags = [
-  'Engenharia de Software',
   'Software House',
+  'Engenharia de Software',
   'Automação de Processos',
   'Integração de Sistemas',
   'Inteligência Artificial',
@@ -28,14 +25,14 @@ const heroTags = [
 
 const whoWeAreParagraphs = [
   'Somos uma software house especializada em engenharia de software, automação de processos, integração de sistemas e inteligência artificial, ajudando negócios a construir sistemas, conectar plataformas e automatizar operações com mais eficiência.',
-  'Na DS Corp, a tecnologia é nossa base, mas a automação é o nosso combustível.',
+  'Na DS Corp, a tecnologia é nossa base, mas a engenharia é o nosso combustível.',
 ]
 
 const whoHighlights = [
+  'Software house para criar e evoluir produtos digitais',
   'Engenharia para sistemas, APIs e integração de sistemas',
   'Automação de processos para ganho de escala',
   'Inteligência artificial aplicada a automações e sistemas',
-  'Software house para criar e evoluir produtos digitais',
   'Estrutura técnica para crescer com segurança e velocidade',
 ]
 
@@ -94,28 +91,20 @@ const consultingBenefits = [
 
 const fundamentalsGallery = [
   {
-    src: fundamentalsImageOne,
-    alt: 'Profissionais analisando documentos financeiros',
+    label: 'Engenharia de Software',
+    Icon: SoftwareIcon,
   },
   {
-    src: fundamentalsImageTwo,
-    alt: 'Relatórios, calculadora e planilhas em mesa corporativa',
+    label: 'Automação & Integração',
+    Icon: AutomationIcon,
   },
   {
-    src: fundamentalsImageThree,
-    alt: 'Documentos com gráficos e anotações estratégicas',
+    label: 'Inteligência Artificial',
+    Icon: ArtificialIntelligenceIcon,
   },
 ]
 
 const comparisonCards = [
-  {
-    title: 'Engenharia de Software',
-    intro:
-      'A engenharia de software organiza a operação digital da empresa. Ela transforma necessidades do negócio em sistemas, integrações e automações que dão velocidade, padronização e escala para a execução.',
-    items: softwareEngineeringBulletPoints,
-    closing:
-      'Quando bem aplicada, reduz ruído operacional, melhora a experiência interna e conecta tecnologia diretamente ao resultado.',
-  },
   {
     title: 'Software House',
     intro:
@@ -123,6 +112,14 @@ const comparisonCards = [
     items: softwareHouseBulletPoints,
     closing:
       'Mais do que entregar código, construímos base técnica sólida para o produto crescer com segurança e velocidade.',
+  },
+  {
+    title: 'Engenharia de Software',
+    intro:
+      'A engenharia de software organiza a operação digital da empresa. Ela transforma necessidades do negócio em sistemas, integrações e automações que dão velocidade, padronização e escala para a execução.',
+    items: softwareEngineeringBulletPoints,
+    closing:
+      'Quando bem aplicada, reduz ruído operacional, melhora a experiência interna e conecta tecnologia diretamente ao resultado.',
   },
   {
     title: 'Automação de Processos',
@@ -189,6 +186,110 @@ function AnalyticsIcon() {
       />
       <path d="M137 194L154 177" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
       <path d="M151 191L168 208" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+function SoftwareIcon() {
+  return (
+    <svg
+      className="fundamentals-illustration"
+      viewBox="0 0 240 240"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <rect x="34" y="46" width="172" height="140" rx="18" stroke="currentColor" strokeWidth="7" />
+      <path d="M34 84H206" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      <circle cx="55" cy="65" r="5" fill="currentColor" />
+      <circle cx="75" cy="65" r="5" fill="currentColor" />
+      <circle cx="95" cy="65" r="5" fill="currentColor" />
+      <path
+        d="M92 108L64 132L92 156"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M148 108L176 132L148 156"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M128 100L112 164" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+function AutomationIcon() {
+  return (
+    <svg
+      className="fundamentals-illustration"
+      viewBox="0 0 240 240"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <circle cx="46" cy="150" r="24" stroke="currentColor" strokeWidth="7" />
+      <circle cx="120" cy="150" r="24" stroke="currentColor" strokeWidth="7" />
+      <circle cx="194" cy="150" r="24" stroke="currentColor" strokeWidth="7" />
+      <path d="M70 150H96" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      <path d="M86 141L96 150L86 159" stroke="currentColor" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M144 150H170" stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      <path d="M160 141L170 150L160 159" stroke="currentColor" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M120 118V90M120 90L108 102M120 90L132 102"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M96 60C104 48 136 48 144 60"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+      />
+      <path d="M139 52L144 60L135 62" stroke="currentColor" strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function ArtificialIntelligenceIcon() {
+  return (
+    <svg
+      className="fundamentals-illustration"
+      viewBox="0 0 240 240"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <rect x="66" y="66" width="108" height="108" rx="16" stroke="currentColor" strokeWidth="7" />
+      {[64, 92, 120, 148].map((y) => (
+        <path key={`pin-left-${y}`} d={`M42 ${y}H66`} stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      ))}
+      {[64, 92, 120, 148].map((y) => (
+        <path key={`pin-right-${y}`} d={`M174 ${y}H198`} stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      ))}
+      {[86, 114, 142, 170].map((x) => (
+        <path key={`pin-top-${x}`} d={`M${x} 42V66`} stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      ))}
+      {[86, 114, 142, 170].map((x) => (
+        <path key={`pin-bottom-${x}`} d={`M${x} 174V198`} stroke="currentColor" strokeWidth="7" strokeLinecap="round" />
+      ))}
+      <circle cx="96" cy="96" r="8" fill="currentColor" />
+      <circle cx="144" cy="96" r="8" fill="currentColor" />
+      <circle cx="120" cy="130" r="8" fill="currentColor" />
+      <circle cx="96" cy="160" r="8" fill="currentColor" />
+      <circle cx="144" cy="160" r="8" fill="currentColor" />
+      <path
+        d="M96 96L144 96M96 96L120 130M144 96L120 130M120 130L96 160M120 130L144 160"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+      />
     </svg>
   )
 }
@@ -447,7 +548,7 @@ function App() {
 
               <h1>
                 <span>Tecnologia é a nossa base,</span>
-                <span>mas a automação é o nosso</span>
+                <span>mas a engenharia é o nosso</span>
                 <span>combustível.</span>
               </h1>
 
@@ -528,8 +629,11 @@ function App() {
 
           <div className="fundamentals-grid">
             {fundamentalsGallery.map((item, index) => (
-              <figure className={`fundamentals-card fundamentals-card--${index + 1}`} key={item.src}>
-                <img src={item.src} alt={item.alt} />
+              <figure className={`fundamentals-card fundamentals-card--${index + 1}`} key={item.label}>
+                <div className="fundamentals-icon">
+                  <item.Icon />
+                </div>
+                <figcaption>{item.label}</figcaption>
               </figure>
             ))}
           </div>
