@@ -18,10 +18,10 @@ const externalLinks = [
 const heroTags = [
   'Software House',
   'Engenharia de Software',
+  'Cibersegurança',
   'Automação de Processos',
   'Integração de Sistemas',
   'Inteligência Artificial',
-  'Cibersegurança',
 ]
 
 const whoWeAreParagraphs = [
@@ -32,14 +32,14 @@ const whoWeAreParagraphs = [
 const whoHighlights = [
   'Software house para criar e evoluir produtos digitais',
   'Engenharia para sistemas, APIs e integração de sistemas',
+  'Cibersegurança aplicada a sistemas, acessos e integrações',
   'Automação de processos para ganho de escala',
   'Inteligência artificial aplicada a automações e sistemas',
-  'Cibersegurança aplicada a sistemas, acessos e integrações',
   'Estrutura técnica para crescer com segurança e velocidade',
 ]
 
 const fundamentalsText =
-  'A DS Corp combina engenharia de software, automação de processos, integração de sistemas, inteligência artificial e cibersegurança para construir soluções digitais e fluxos operacionais mais eficientes e seguros. O objetivo não é apenas entregar tecnologia, mas criar estrutura técnica para execução e escala.'
+  'A DS Corp combina engenharia de software, cibersegurança, automação de processos, integração de sistemas e inteligência artificial para construir soluções digitais e fluxos operacionais mais eficientes e seguros. O objetivo não é apenas entregar tecnologia, mas criar estrutura técnica para execução e escala.'
 
 const softwareEngineeringBulletPoints = [
   'Sistemas web e internos orientados ao negócio',
@@ -131,6 +131,14 @@ const comparisonCards = [
       'Quando bem aplicada, reduz ruído operacional, melhora a experiência interna e conecta tecnologia diretamente ao resultado.',
   },
   {
+    title: 'Cibersegurança',
+    intro:
+      'Cibersegurança protege sistemas, integrações e automações contra acessos indevidos e falhas de segurança, garantindo que a operação digital funcione de forma confiável e resiliente.',
+    items: cybersecurityBulletPoints,
+    closing:
+      'Aplicada junto à engenharia e à integração de sistemas, a cibersegurança reduz riscos e sustenta a confiança na operação.',
+  },
+  {
     title: 'Automação de Processos',
     intro:
       'Automação de processos elimina etapas manuais desnecessárias e transforma rotinas críticas em fluxos digitais mais previsíveis. O foco é ganhar velocidade, reduzir falhas e aumentar a capacidade operacional.',
@@ -153,14 +161,6 @@ const comparisonCards = [
     items: artificialIntelligenceBulletPoints,
     closing:
       'Combinada à engenharia e à automação, a IA transforma informação em execução mais rápida e assertiva.',
-  },
-  {
-    title: 'Cibersegurança',
-    intro:
-      'Cibersegurança protege sistemas, integrações e automações contra acessos indevidos e falhas de segurança, garantindo que a operação digital funcione de forma confiável e resiliente.',
-    items: cybersecurityBulletPoints,
-    closing:
-      'Aplicada junto à engenharia e à integração de sistemas, a cibersegurança reduz riscos e sustenta a confiança na operação.',
   },
 ]
 
@@ -561,7 +561,7 @@ function App() {
                 </span>
               </a>
 
-              <p className="eyebrow">Engenharia de software, automação, integração, IA e cibersegurança conectadas</p>
+              <p className="eyebrow">Engenharia de software, cibersegurança, automação, integração e IA conectadas</p>
 
               <h1>
                 <span>Tecnologia é a nossa base,</span>
@@ -732,16 +732,16 @@ function App() {
           <article className="panel consulting-card">
             <p className="eyebrow">Consultoria integrada</p>
             <h3>
-              Por que unir Software House, engenharia de software, integração de
-              sistemas, automação de processos, inteligência artificial e cibersegurança?
+              Por que unir Software House, engenharia de software, cibersegurança,
+              automação de processos, integração de sistemas e inteligência artificial?
             </h3>
 
             <p>
               Em um cenário cada vez mais competitivo, depender de sistemas manuais,
               processos fragmentados e integrações improvisadas custa caro. Por isso, unir
-              Software House, engenharia de software, integração de sistemas, automação de
-              processos, inteligência artificial e cibersegurança cria uma vantagem
-              estratégica real para a operação.
+              Software House, engenharia de software, cibersegurança, automação de
+              processos, integração de sistemas e inteligência artificial cria uma
+              vantagem estratégica real para a operação.
             </p>
 
             <p>
