@@ -21,6 +21,7 @@ const heroTags = [
   'Automação de Processos',
   'Integração de Sistemas',
   'Inteligência Artificial',
+  'Cibersegurança',
 ]
 
 const whoWeAreParagraphs = [
@@ -33,11 +34,12 @@ const whoHighlights = [
   'Engenharia para sistemas, APIs e integração de sistemas',
   'Automação de processos para ganho de escala',
   'Inteligência artificial aplicada a automações e sistemas',
+  'Cibersegurança aplicada a sistemas, acessos e integrações',
   'Estrutura técnica para crescer com segurança e velocidade',
 ]
 
 const fundamentalsText =
-  'A DS Corp combina engenharia de software, automação de processos, integração de sistemas e inteligência artificial para construir soluções digitais e fluxos operacionais mais eficientes. O objetivo não é apenas entregar tecnologia, mas criar estrutura técnica para execução e escala.'
+  'A DS Corp combina engenharia de software, automação de processos, integração de sistemas, inteligência artificial e cibersegurança para construir soluções digitais e fluxos operacionais mais eficientes e seguros. O objetivo não é apenas entregar tecnologia, mas criar estrutura técnica para execução e escala.'
 
 const softwareEngineeringBulletPoints = [
   'Sistemas web e internos orientados ao negócio',
@@ -71,6 +73,12 @@ const artificialIntelligenceBulletPoints = [
   'Assistentes e agentes de IA para apoiar decisões operacionais',
 ]
 
+const cybersecurityBulletPoints = [
+  'Proteção de sistemas, acessos e integrações contra ameaças digitais',
+  'Boas práticas de segurança em APIs, integrações e automações',
+  'Monitoramento e resposta a incidentes de segurança',
+]
+
 const integrationBulletPoints = [
   'Transformam processos manuais em fluxos digitais mais confiáveis.',
   'Conectam sistemas e operação em uma mesma arquitetura.',
@@ -87,6 +95,7 @@ const consultingBenefits = [
   'Aplicação de inteligência artificial para automatizar análises, classificações e triagens',
   'Assistentes e agentes de IA para acelerar tarefas operacionais repetitivas',
   'Capacidade de resposta mais rápida pela integração entre processos e sistemas',
+  'Boas práticas de cibersegurança aplicadas a sistemas, integrações e automações',
 ]
 
 const fundamentalsGallery = [
@@ -144,6 +153,14 @@ const comparisonCards = [
     items: artificialIntelligenceBulletPoints,
     closing:
       'Combinada à engenharia e à automação, a IA transforma informação em execução mais rápida e assertiva.',
+  },
+  {
+    title: 'Cibersegurança',
+    intro:
+      'Cibersegurança protege sistemas, integrações e automações contra acessos indevidos e falhas de segurança, garantindo que a operação digital funcione de forma confiável e resiliente.',
+    items: cybersecurityBulletPoints,
+    closing:
+      'Aplicada junto à engenharia e à integração de sistemas, a cibersegurança reduz riscos e sustenta a confiança na operação.',
   },
 ]
 
@@ -544,7 +561,7 @@ function App() {
                 </span>
               </a>
 
-              <p className="eyebrow">Engenharia de software, automação e integração conectadas</p>
+              <p className="eyebrow">Engenharia de software, automação, integração, IA e cibersegurança conectadas</p>
 
               <h1>
                 <span>Tecnologia é a nossa base,</span>
@@ -716,15 +733,15 @@ function App() {
             <p className="eyebrow">Consultoria integrada</p>
             <h3>
               Por que unir Software House, engenharia de software, integração de
-              sistemas, automação de processos e inteligência artificial?
+              sistemas, automação de processos, inteligência artificial e cibersegurança?
             </h3>
 
             <p>
               Em um cenário cada vez mais competitivo, depender de sistemas manuais,
               processos fragmentados e integrações improvisadas custa caro. Por isso, unir
               Software House, engenharia de software, integração de sistemas, automação de
-              processos e inteligência artificial cria uma vantagem estratégica real para
-              a operação.
+              processos, inteligência artificial e cibersegurança cria uma vantagem
+              estratégica real para a operação.
             </p>
 
             <p>
