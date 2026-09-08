@@ -23,22 +23,24 @@ const heroTags = [
   'Software House',
   'Automação de Processos',
   'Integração de Sistemas',
+  'Inteligência Artificial',
 ]
 
 const whoWeAreParagraphs = [
-  'Somos uma empresa especializada em soluções inteligentes baseada em dados, ajudando negócios a coletar, organizar, analisar e transformar informações em estratégias de crescimento, automações e produtos digitais mais eficientes.',
-  'Na DS Corp, a tecnologia é nossa base, mas os dados são o nosso combustível.',
+  'Somos uma software house especializada em engenharia de software, automação de processos, integração de sistemas e inteligência artificial, ajudando negócios a construir sistemas, conectar plataformas e automatizar operações com mais eficiência.',
+  'Na DS Corp, a tecnologia é nossa base, mas a automação é o nosso combustível.',
 ]
 
 const whoHighlights = [
   'Engenharia para sistemas, APIs e integração de sistemas',
   'Automação de processos para ganho de escala',
+  'Inteligência artificial aplicada a automações e sistemas',
   'Software house para criar e evoluir produtos digitais',
-  'Estrutura para decisões rápidas e seguras',
+  'Estrutura técnica para crescer com segurança e velocidade',
 ]
 
 const fundamentalsText =
-  'A DS Corp combina engenharia de software, automação de processos, integração de sistemas, dados e inteligência gerencial para construir soluções digitais, fluxos operacionais e camadas de leitura de negócio. O objetivo não é apenas organizar informação, mas criar estrutura técnica para execução, escala e decisão.'
+  'A DS Corp combina engenharia de software, automação de processos, integração de sistemas e inteligência artificial para construir soluções digitais e fluxos operacionais mais eficientes. O objetivo não é apenas entregar tecnologia, mas criar estrutura técnica para execução e escala.'
 
 const softwareEngineeringBulletPoints = [
   'Sistemas web e internos orientados ao negócio',
@@ -57,23 +59,37 @@ const processAutomationBulletPoints = [
   'Fluxos de aprovação, alertas e gatilhos entre sistemas',
   'Padronização de rotinas para reduzir gargalos e retrabalho',
   'Integração de etapas críticas com mais velocidade e rastreabilidade',
+  'Inteligência artificial aplicada a classificação, previsão e triagem automática',
+]
+
+const integrationSystemsBulletPoints = [
+  'Conexão entre ERPs, CRMs, plataformas e ferramentas operacionais',
+  'APIs e integrações para comunicação em tempo real entre sistemas',
+  'Eliminação de retrabalho manual entre sistemas',
+]
+
+const artificialIntelligenceBulletPoints = [
+  'Modelos preditivos para antecipar cenários, riscos e demandas',
+  'Automação inteligente de análises, classificações e triagens',
+  'Assistentes e agentes de IA para apoiar decisões operacionais',
 ]
 
 const integrationBulletPoints = [
   'Transformam processos manuais em fluxos digitais mais confiáveis.',
-  'Conectam sistemas, dados e operação em uma mesma arquitetura.',
-  'Facilitam a leitura de desempenho e a identificação de gargalos.',
+  'Conectam sistemas e operação em uma mesma arquitetura.',
+  'Facilitam a identificação de gargalos operacionais.',
   'Criam base técnica para crescer com mais velocidade e controle.',
 ]
 
 const consultingBenefits = [
   'Automação de processos operacionais e administrativos para reduzir gargalos e retrabalho',
-  'Automatização de relatórios operacionais e gerenciais com atualizações em tempo real',
-  'Análise de performance financeira cruzando receitas, despesas, tributos e KPIs operacionais',
-  'Integração de sistemas, APIs e fluxos que conectam ambientes financeiros, comerciais e operacionais',
+  'Integração de sistemas, APIs e fluxos entre plataformas, ERPs e ferramentas operacionais',
   'Orquestração de etapas, aprovações e notificações entre times e plataformas',
-  'Planejamento e orçamento mais precisos com base em dados históricos e tendências de mercado',
-  'Capacidade de resposta mais rápida pela integração entre processos, dados e operação',
+  'Squads dedicados para criar e evoluir produtos digitais sob medida',
+  'Arquitetura escalável para sistemas crescerem com segurança e performance',
+  'Aplicação de inteligência artificial para automatizar análises, classificações e triagens',
+  'Assistentes e agentes de IA para acelerar tarefas operacionais repetitivas',
+  'Capacidade de resposta mais rápida pela integração entre processos e sistemas',
 ]
 
 const fundamentalsGallery = [
@@ -114,30 +130,23 @@ const comparisonCards = [
       'Automação de processos elimina etapas manuais desnecessárias e transforma rotinas críticas em fluxos digitais mais previsíveis. O foco é ganhar velocidade, reduzir falhas e aumentar a capacidade operacional.',
     items: processAutomationBulletPoints,
     closing:
-      'Quando conectada à engenharia e aos dados, a automação deixa de ser tarefa isolada e passa a ser mecanismo de escala do negócio.',
-  },
-]
-
-const toolCards = [
-  {
-    name: 'Microsoft Fabric',
-    logo: '/microsoft-fabric.svg',
-    logoAlt: 'Logo do Microsoft Fabric',
-    logoFrameClassName: 'tool-card__logo-frame--fabric',
-    logoClassName: 'tool-card__logo--fabric',
-    title: 'O que é o Microsoft Fabric?',
-    text:
-      'O Microsoft Fabric é uma plataforma unificada de análise de dados desenvolvida pela Microsoft, lançada oficialmente em 2023. Seu objetivo é integrar diversas ferramentas de engenharia de dados, ciência de dados, business intelligence e armazenamento em um único ambiente.',
+      'Quando conectada à engenharia e à integração de sistemas, a automação deixa de ser tarefa isolada e passa a ser mecanismo de escala do negócio.',
   },
   {
-    name: 'Databricks',
-    logo: '/databricks-logo.png',
-    logoAlt: 'Logo do Databricks',
-    logoFrameClassName: 'tool-card__logo-frame--databricks',
-    logoClassName: 'tool-card__logo--databricks',
-    title: 'O que é o Databricks?',
-    text:
-      'O Databricks é uma plataforma unificada de análise de dados, engenharia de dados, ciência de dados e machine learning, baseada no Apache Spark. Ela foi criada para facilitar o processamento de grandes volumes de dados de forma rápida, escalável e colaborativa.',
+    title: 'Integração de Sistemas',
+    intro:
+      'Integração de sistemas conecta plataformas, ERPs, APIs e ferramentas operacionais em um fluxo único, eliminando retrabalho manual e garantindo que a informação circule de forma consistente entre as áreas do negócio.',
+    items: integrationSystemsBulletPoints,
+    closing:
+      'Quando os sistemas conversam entre si, a operação ganha consistência, rastreabilidade e velocidade de resposta.',
+  },
+  {
+    title: 'Inteligência Artificial',
+    intro:
+      'A inteligência artificial aplicada ao negócio automatiza análises, antecipa cenários e apoia decisões com mais velocidade e precisão, unindo modelos preditivos e automação em um mesmo fluxo.',
+    items: artificialIntelligenceBulletPoints,
+    closing:
+      'Combinada à engenharia e à automação, a IA transforma informação em execução mais rápida e assertiva.',
   },
 ]
 
@@ -434,17 +443,17 @@ function App() {
                 </span>
               </a>
 
-              <p className="eyebrow">Engenharia de software, dados e gestão conectados</p>
+              <p className="eyebrow">Engenharia de software, automação e integração conectadas</p>
 
               <h1>
                 <span>Tecnologia é a nossa base,</span>
-                <span>mas os dados são o nosso</span>
+                <span>mas a automação é o nosso</span>
                 <span>combustível.</span>
               </h1>
 
               <p className="hero-lead">
                 Construímos sistemas, integração de sistemas, automações de processos e
-                leitura gerencial para transformar tecnologia em direção estratégica.
+                inteligência artificial para transformar tecnologia em execução real.
               </p>
 
               <div className="tag-row" aria-label="Áreas de atuação">
@@ -455,8 +464,8 @@ function App() {
 
               <div className="hero-insight">
                 <div>
-                  <strong>Dados que geram clareza.</strong>
-                  <p>Menos ruído operacional, mais leitura estratégica para a gestão.</p>
+                  <strong>Automação que gera clareza.</strong>
+                  <p>Menos ruído operacional, mais eficiência na execução dos processos.</p>
                 </div>
 
                 <div className="hero-insight__icon">
@@ -481,11 +490,11 @@ function App() {
         <div className="content-shell">
           <div className="section-intro">
             <p className="eyebrow">Quem somos</p>
-            <h2>Dados, gestão e execução no mesmo plano.</h2>
+            <h2>Engenharia, automação e execução no mesmo plano.</h2>
             <p>
-              A DS Corp une inteligência analítica, engenharia de software, integração de
-              sistemas, automação de processos e gestão para criar uma base de decisão mais
-              confiável, clara e útil para o negócio.
+              A DS Corp une engenharia de software, integração de sistemas, automação de
+              processos e inteligência artificial para criar uma base técnica mais confiável,
+              ágil e escalável para o negócio.
             </p>
           </div>
 
@@ -513,7 +522,7 @@ function App() {
         <div className="content-shell">
           <div className="section-intro section-intro--center">
             <p className="eyebrow">Soluções</p>
-            <h2>Software, dados e gestão atuando em conjunto.</h2>
+            <h2>Software, automação e inteligência artificial atuando em conjunto.</h2>
             <p>{fundamentalsText}</p>
           </div>
 
@@ -531,7 +540,7 @@ function App() {
         <div className="content-shell">
           <div className="section-intro section-intro--center">
             <p className="eyebrow">Pilares</p>
-            <h2>Da arquitetura técnica à decisão de negócio.</h2>
+            <h2>Da arquitetura técnica à execução do negócio.</h2>
           </div>
 
           <div className="comparison-grid">
@@ -565,9 +574,9 @@ function App() {
               <h2>Como isso se conecta?</h2>
               <p>
                 Engenharia de software organiza a execução, integração de sistemas conecta a
-                operação, automação de processos reduz atrito, e dados trazem visibilidade
-                para a decisão. Quando essas frentes atuam em conjunto, a empresa ganha
-                clareza, velocidade e consistência operacional.
+                operação, automação de processos reduz atrito, e inteligência artificial
+                acelera análises e respostas. Quando essas frentes atuam em conjunto, a
+                empresa ganha clareza, velocidade e consistência operacional.
               </p>
             </article>
 
@@ -584,9 +593,9 @@ function App() {
           <article className="panel panel--accent integration-summary">
             <p>
               Esse trabalho conjunto é essencial para estruturar produtos internos,
-              integrações entre sistemas, dashboards gerenciais, automações e rotinas de
-              acompanhamento econômico. O resultado é uma operação mais conectada, escalável
-              e orientada por decisão.
+              integrações entre sistemas, automações de processos e soluções de
+              inteligência artificial. O resultado é uma operação mais conectada,
+              escalável e eficiente.
             </p>
           </article>
         </div>
@@ -596,27 +605,28 @@ function App() {
         <div className="content-shell">
           <div className="section-intro section-intro--center">
             <p className="eyebrow">Abordagem</p>
-            <h2>Tecnologia aplicada a software, dados e operação.</h2>
+            <h2>Tecnologia aplicada a software, automação e integração.</h2>
           </div>
 
           <article className="panel consulting-card">
             <p className="eyebrow">Consultoria integrada</p>
             <h3>
               Por que unir Software House, engenharia de software, integração de
-              sistemas e automação de processos?
+              sistemas, automação de processos e inteligência artificial?
             </h3>
 
             <p>
-              Em um cenário cada vez mais competitivo e orientado por dados, tomar decisões
-              com base em suposições ou planilhas fragmentadas custa caro. Por isso, unir
-              Databricks, Microsoft Fabric, engenharia de software, integração de sistemas e
-              automação de processos cria uma vantagem estratégica real para a gestão.
+              Em um cenário cada vez mais competitivo, depender de sistemas manuais,
+              processos fragmentados e integrações improvisadas custa caro. Por isso, unir
+              Software House, engenharia de software, integração de sistemas, automação de
+              processos e inteligência artificial cria uma vantagem estratégica real para
+              a operação.
             </p>
 
             <p>
-              Essa abordagem transforma dados brutos em informação acionável, conecta os
-              números à realidade operacional da empresa e sustenta produtos, integrações e
-              operações com mais qualidade de execução.
+              Essa abordagem conecta sistemas, elimina retrabalho manual e sustenta
+              produtos, integrações e automações com mais qualidade de execução e
+              velocidade de entrega.
             </p>
 
             <div className="benefit-grid">
